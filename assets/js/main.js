@@ -27,7 +27,7 @@ let swiperListings = new Swiper('.listings__container', {
   loop: true,
   grabCursor: true,
   slidesPerView: 'auto',
-  spaceBetween: 30,
+  spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
