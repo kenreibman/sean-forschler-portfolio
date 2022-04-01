@@ -27,14 +27,20 @@ let swiperListings = new Swiper('.listings__container', {
   loop: true,
   grabCursor: true,
   slidesPerView: 'auto',
-  spaceBetween: 20,
+  spaceBetween: 10,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    },
+  },
 });
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-/*=============== LIGHT DARK THEME ===============*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/

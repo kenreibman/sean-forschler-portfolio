@@ -200,7 +200,17 @@ body.dark-theme {
 
 .nav__menu {
   display: none;
-  text-align: left;
+  position: fixed;
+  text-align: center;
+  right: 0rem;
+  left: 0;
+  top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+
 }
 @media screen and (min-width: 1024px) {
   .nav__menu {
@@ -209,6 +219,13 @@ body.dark-theme {
 .show {
   display: flex;
 }
+
+.nav__link {
+  color: var(--title-color);
+  font-size: var(--font-medium);
+  font-weight: var(--font-medium);
+}
+
 
 .nav__menu--bottom {
   position: fixed;
@@ -293,6 +310,12 @@ svg {
   );
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
+@media screen and (max-width: 320px) {
+  .hero__container {
+    width: 200px;
+    height: 220px;
+  }
+}
 
 .hero__img {
   width: 100%;
@@ -305,6 +328,11 @@ svg {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+}
+@media screen and (max-width: 320px) {
+  .home__buttons {
+    flex-direction: column;
+  }
 }
 
 .home__social {
@@ -532,7 +560,20 @@ svg {
   font-size: var(--smaller-font-size);
 }
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+  background-color: hsl(var(--second-hue), 8%, 38%);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--second-hue), 8%, 54%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--second-hue), 8%, 44%);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
