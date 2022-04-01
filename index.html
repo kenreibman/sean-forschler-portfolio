@@ -7,8 +7,8 @@
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="" type="image/x-icon">
 
-        <!--=============== BOXICONS ===============-->
-        
+        <!--=============== FONTAWESOME ===============-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="">
@@ -23,13 +23,29 @@
         <header class="header" id="header">
 
             <nav class="nav container">
-                <a href="/" class="nav__logo">SEAN FORSCHLER</a>
-                <ul>
-                    <li>Home</li>
-                    <li>Listings</li>
-                    <li>Reviews</li>
-                    <li>Contact</li>
-                </ul>
+                <a href="/" class="header__logo">SEAN FORSCHLER</a>
+
+                <!-- fontawesome hamburger icon -->
+                <div class="nav__hamburger" id="hamburgerMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Home</a>
+                        </li> 
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#reviews" class="nav__link">Reviews</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -37,12 +53,50 @@
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__name">Sean Forschler</h1>
+                        <h3 class="home__occupation">Realtor</h3>
+                    
+                    <div class="home__buttons">
+                        <a href="#about" class="button button--ghost">About Me</a>
+                        <a href="#contact" class="button">Contact Me</a>
+                    </div>
+
+                    </div>
+    
+    
+                    <div class="hero__container">
+                        <img src="assets/images/hero.png" class="hero__img" alt="" aria-hidden="true">
+                    </div>
+        
+                    <div class="home__social">
+                        <a href="https://linkedin.com" class="home__social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://facebook.com" class="home__social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="home__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </section>
             
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                
+                    <div class="about__container container grid">
+                        <h2 class="section__title">About Me</h2>
+
+                        <img src="assets/images/about.jpg" aria-hidden="true" alt="" class="about__img">
+
+                        <div class="about__data">
+                            <p class="about__description"><strong>Sean Forschler</strong> has been a DC Metro resident for over 30 years. He’s been a realtor since 2001 and is highly knowledgeable of the complexities of buying and selling houses, condominiums, cooperatives and townhouses. Sean’s genuine and engaging personality allows him to connect and respond to the needs of his clients.</p>
+    
+                            <a href="#contact" class="button">Contact Me</a>
+                        </div>
+                    </div>
             </section>
 
             <!--=============== SKILLS ===============-->
@@ -86,6 +140,6 @@
         <script src=""></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
