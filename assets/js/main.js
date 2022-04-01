@@ -22,8 +22,17 @@ hamburgerMenu.addEventListener('click', () => {
 
 /* Link active work */
 
-/*=============== SWIPER TESTIMONIAL ===============*/
-
+/*=============== SWIPER LISTINGS ===============*/
+let swiperListings = new Swiper('.listings__container', {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== LIGHT DARK THEME ===============*/

@@ -14,7 +14,7 @@
   */
   --first-hue: 199;
   --sat: 98%;
-  --lig: 60%;
+  --lig: 45%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
@@ -235,7 +235,7 @@ svg {
   height: 20px;
   width: 20px;
 }
-.nav__link {
+.nav__link--bottom {
   color: white;
   font-size: var(--smaller-font-size);
 }
