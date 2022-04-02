@@ -51,4 +51,4 @@ sr.reveal(`.hero__container`, { delay: 700 });
 `.about__description`;
 sr.reveal(`.home__social`, { delay: 900, origin: 'bottom' });
 
-sr.reveal(`.about__container, .about`, { delay: 2000 });
+sr.reveal(`.about__container, .about`, { delay: 1000 });
