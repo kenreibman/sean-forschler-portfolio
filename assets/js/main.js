@@ -16,12 +16,6 @@ hamburgerMenu.addEventListener('click', () => {
   navMenu.classList.toggle('show');
 });
 
-/*=============== SERVICES MODAL ===============*/
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
-/* Link active work */
-
 /*=============== SWIPER LISTINGS ===============*/
 let swiperListings = new Swiper('.listings__container', {
   loop: true,
@@ -44,3 +38,17 @@ let swiperListings = new Swiper('.listings__container', {
 });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true,
+});
+
+sr.reveal(`.home__data`);
+sr.reveal(`.hero__container`, { delay: 700 });
+`.about__description`;
+sr.reveal(`.home__social`, { delay: 900, origin: 'bottom' });
+
+sr.reveal(`.about__container, .about`, { delay: 2000 });

@@ -460,9 +460,10 @@ svg {
   width: 400px;
 }
 
-.listing__img {
+/* .listing__img {
 
-}
+} */
+
 /*=============== REVIEWS ===============*/
 .review__card {
   background-color: var(--container-color);
