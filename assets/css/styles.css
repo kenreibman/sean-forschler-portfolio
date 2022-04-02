@@ -176,6 +176,7 @@ body.dark-theme {
 .nav {
   height: var(--header-height);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -199,31 +200,53 @@ body.dark-theme {
 }
 
 .nav__menu {
+  width: 100%;
   display: none;
   position: fixed;
   text-align: center;
-  right: 0rem;
+  right: 0;
   left: 0;
   top: 50px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
   background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
 
 }
 @media screen and (min-width: 1024px) {
   .nav__menu {
+    display: block;
+    position: unset;
+    text-align: unset;
+    right: unset;
+    left: unset;
+    top: unset;
+    background-color: unset;
+    width: unset;
   }
 }
 .show {
+  display: block;
+}
+
+.nav__list {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .nav__link {
   color: var(--title-color);
   font-size: var(--font-medium);
   font-weight: var(--font-medium);
+}
+@media screen and (min-width: 1024px) {
+  .nav__link {
+    margin-right: 2rem;
+  }
 }
 
 
@@ -276,9 +299,20 @@ svg {
   row-gap: 4.5rem;
   padding-top: 2rem;
 }
+@media screen and (min-width: 1024px) {
+  .home__container {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+  }
+}
 
 .home__data {
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .home__data {
+    text-align: left;
+  }
 }
 
 .home__name {
@@ -293,6 +327,23 @@ svg {
 .home__occupation {
   color: var(--text-color);
   margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .home__occupation {
+    margin-bottom: 2rem;
+  }
+}
+
+.home__description {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .home__description {
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+  }
 }
 
 .hero__container {
@@ -332,6 +383,11 @@ svg {
 @media screen and (max-width: 320px) {
   .home__buttons {
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home__buttons {
+    justify-content: left;
   }
 }
 
@@ -426,11 +482,35 @@ svg {
   line-height: 2;
 }
 /*=============== CONTACT ===============*/
+@media screen and (min-width: 767px) {
+  .contact__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+.contact__info {
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (min-width: 576px ) {
+  .contact__info {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+}
+
 .contact__card {
   background-color: var(--container-color);
   padding: 1rem;
   border-radius: 0.25rem;
   text-align: center;
+  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact__card-icon {
@@ -469,6 +549,13 @@ svg {
 .contact__button-icon {
   font-size: 1rem;
   transition: 0.4s;
+}
+
+@media screen and (min-width: 576px) {
+  .contact__form {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .contact__form-div {
@@ -578,3 +665,9 @@ svg {
 /* For medium devices */
 
 /* For large devices */
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
