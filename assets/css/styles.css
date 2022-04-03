@@ -342,7 +342,7 @@ svg {
     display: block;
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
-    margin-bottom: 2rem;
+    margin-bottom: 4.5rem;
   }
 }
 
@@ -603,7 +603,8 @@ svg {
 }
 
 .footer__container {
-  padding: 2rem 0 6rem;
+  padding: 3rem 0 6rem;
+  margin-top: 3rem;
 }
 
 .footer__title {
